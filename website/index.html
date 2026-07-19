@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorldFit Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>WorldFit Store</h1>
+<p>Order Your Favorite Products</p>
+</header>
+
+<div class="products">
+
+<div class="card">
+<img src="images/1.png" alt="Retro Game Console">
+<div class="card-content">
+<h3>Retro Game Console</h3>
+<div class="price">₹899</div>
+<button class="add-btn" onclick="addToCart('Retro Game Console',899)">
+Add To Cart
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="images/11.jpg" alt="Neckband">
+<div class="card-content">
+<h3>Bluetooth Neckband</h3>
+<div class="price">₹499</div>
+<button class="add-btn" onclick="addToCart('Bluetooth Neckband',499)">
+Add To Cart
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="images/pillow.jpg" alt="Baby Pillow">
+<div class="card-content">
+<h3>Baby Pillow</h3>
+<div class="price">₹299</div>
+<button class="add-btn" onclick="addToCart('Baby Pillow',299)">
+Add To Cart
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="cart">
+
+<h2>Checkout</h2>
+
+<div id="cartItems">No products added.</div>
+
+<h3 id="total">Total: ₹0</h3>
+
+<form id="checkoutForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="mobile"
+placeholder="Mobile Number"
+pattern="[0-9]{10}"
+maxlength="10"
+required>
+
+<textarea id="address"
+placeholder="Full Address"
+rows="4"
+required></textarea>
+
+<input type="text" id="city"
+placeholder="City"
+required>
+
+<input type="text" id="state"
+placeholder="State"
+required>
+
+<input type="text" id="pincode"
+placeholder="Pincode"
+pattern="[0-9]{6}"
+maxlength="6"
+required>
+
+<button type="submit" class="whatsapp">
+Place Order on WhatsApp
+</button>
+
+</form>
+
+</div>
+
+<footer>
+© 2026 WorldFit Store
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
